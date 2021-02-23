@@ -10,37 +10,52 @@ body {
 
 h1 {
 	font-weight: 0,600;
+	margin-top: 0;
+	margin-bottom: 1em;
 }
 
 h2 {
 	font-weight: 0,600;
 	font-style: italic;
+	margin-top: 0;
+	margin-bottom: 1em;
 }
 
 p {
-	text-align: right;
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 1em;
 }
 
 #wrapper {
 	margin: 2em auto;
 	max-width: 1200px;
-	padding: 0 2em;
 }
 
 #main {
-	background: pink;
+	background: black;
 	margin: 2em;
 	padding: 2em;
 }
 
-img {
-	width: 306px;
-	height: 217px;
-	margin: 2em auto;
-
+#sidebar {
+	background: pink;
 }
 
-pre {
-	color: pink;
-	margin-left: 2em auto;
+#content {
+	background: pink;
 }
+
+@media (max-width: 699px) {
+
+	#wrapper {
+		margin: 0em auto;
+	}
+
+	#main {
+		margin: 1em;
+		padding: 0em;
+	}
+
+}
+	
