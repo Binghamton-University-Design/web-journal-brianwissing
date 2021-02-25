@@ -39,12 +39,35 @@ p {
 }
 
 #sidebar {
-	background: pink;
+	background: white;
 }
 
 #content {
-	background: pink;
+	background: white;
 }
+
+#logo {
+	margin: 0;
+}
+
+#logo h1 {
+	padding: 3em 0;
+}
+
+#logo img, .item img {
+	width: 100%;
+	height: auto;
+	padding: 3em 0;
+	margin: 0;
+
+}
+
+#item img {
+	margin: 2em;
+	padding: 2em;
+}
+
+
 
 @media (max-width: 699px) {
 
