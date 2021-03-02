@@ -1,0 +1,23 @@
+/*stylesheet*/
+
+body {
+	margin: 0px;
+	background: black;
+	color: white;
+	font-family: 'Crimson Text', serif;
+	font-weight: 0,400;
+}
+
+
+h1 {
+	font-weight: 0,600;
+	margin-top: 0;
+	margin-bottom: 1em;
+	color: black;
+}
+
+p {
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
