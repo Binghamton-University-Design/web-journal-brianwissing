@@ -158,6 +158,80 @@ p {
 }
 
 
+/* this is for project 1 page*/
+
+#p1main {
+	background: #212F3D;
+	margin: 2em;
+	padding: 2em;
+}
+
+.p1content {
+	background: #ECF0F1;
+}
+
+.p1content {
+	
+}
+
+/* this is for project 2 page */
+
+#projects {
+	margin-bottom: 2em;
+	margin: 5em;
+}
+
+#projects .grid-item {
+	position: relative;
+	color: #ECF0F1;
+}
+#projects .grid-item img {
+
+	display: block;
+	width: 100%;
+	height: auto;
+
+}
+
+#projects .grid-item .overlay {
+	transition: opacity .3s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+	background: rgba(0,0,0,0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#projects .grid-item:hover .overlay {
+	opacity: 1;
+}
+
+#projects .grid-item .overlay .project-title h3 {
+	margin-bottom: 0;
+
+}
+
+/*this is for exquisite corpse*/
+
+#exquisite {
+	position: relative;
+	margin-bottom: 2em;
+}
+
+#exquisite .grid {
+	grid-gap: 0;
+}
+
+#exquisite .grid img {
+	margin-bottom: 0;
+}
+
 
 
 @media (max-width: 699px) {
@@ -172,6 +246,3 @@ p {
 	}
 
 }
-
-
-
