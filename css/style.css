@@ -246,3 +246,45 @@ p {
 	}
 
 }
+
+
+/*playground*/
+
+.big-box {
+	width: 100%;
+	height: 400px;
+	background: purple;
+
+}
+
+.little-box {
+	background: black;
+	width: 100px;
+	height: 100px;
+
+}
+
+.item.playground-box.grid {
+	grid-gap: 0;
+}
+
+#content span {
+	display: block;
+	width: 50%;
+	font-weight: 800;
+}
+
+
+#content .playground-box .left {
+	float: left;
+	width: 50%;
+	background: green;
+
+}
+
+#content .playground-box .right {
+	float: right;
+	width: 50%;
+	background: red;
+
+}
