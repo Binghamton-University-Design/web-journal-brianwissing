@@ -3,17 +3,17 @@
 
 body {
 	margin: 0px;
-	background: #ECF0F1;
-	color: #212F3D;
+	background: black;
+	color: #FAE5D3;
 	font-family: 'Crimson Text', serif;
 	font-weight: 0,400;
 }
 
 h1 {
 	font-weight: 0,600;
-	margin-top: 0;
 	margin-bottom: 1em;
-	text-align: center;	
+	text-align: center;
+	font-size: 200pt;	
 }
 
 h2 {
@@ -24,6 +24,12 @@ h2 {
 	text-align: center;
 }
 
+h3 {
+	color: #FAE5D3;
+	font-size: 20pt;
+	text-align: center;
+}
+
 p {
 	text-align: left;
 	margin-top: 0;
@@ -31,28 +37,89 @@ p {
 	text-align: center;
 }
 
+#content {
+	margin-bottom: 2em;
+	margin-right: 2em;
+	margin-left: 2em;
+	margin-top: 0;
+}
+
+#content .grid-item {
+	position: relative;
+	color: black;
+}
+#content .grid-item img {
+
+	display: block;
+	width: 100%;
+	height: 100%;
+
+}
+
+#content .grid-item .overlay {
+	transition: opacity .5s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+	background: rgba(219,45,26,0.6);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#content .grid-item:hover .overlay {
+	opacity: 1;
+}
+
+#content .grid-item .overlay .project-title h3 {
+	margin-bottom: 0;
+
+}
+
+
+.Albums {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,1fr);
+	grid-gap: 10px;
+	margin: 10px;
+}
+
+.Albums img {
+	width: 100%;
+}
+
+
+
+/* navigation bar */
 
 .navbar {
   overflow: hidden;
-  background-color: #212F3D;
+  background-color: black;
   margin: 0 auto;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
 
 }
 
 .navbar a {
-  float: left;
-  font-size: 16px;
-  color:  #ECF0F1;
+  float: center;
+  font-size: 24px;
+  color:  #FAE5D3;
   text-align: center;
-  padding: 14px 16px;
+  padding: 40px;
   text-decoration: none;
 }
 
 .dropdown {
-  float: left;
+  float: center;
   overflow: hidden;
 }
 
@@ -60,7 +127,7 @@ p {
   font-size: 16px;  
   border: none;
   outline: none;
-  color:  #ECF0F1;
+  color:  #FAE5D3;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -68,13 +135,13 @@ p {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color:  #E74C3C;
+  background-color:  #DB2D1A;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #212F3D;
+  background-color: #DB2D1A;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -82,7 +149,7 @@ p {
 
 .dropdown-content a {
   float: none;
-  color: #ECF0F1;
+  color: #FAE5D3;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -90,12 +157,14 @@ p {
 }
 
 .dropdown-content a:hover {
-  background-color: #E74C3C;
+  background-color: #DB2D1A;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/*end navigation bar*/
 
 
 #wrapper {
@@ -104,13 +173,13 @@ p {
 }
 
 #main {
-	background: #212F3D;
+	background: black;
 	margin: 2em;
 	padding: 2em;
 }
 
 #sidebar {
-	background: #ECF0F1;
+	background: black;
 }
 
 #sidebar a {
@@ -119,7 +188,7 @@ p {
 
 
 #content {
-	background: #ECF0F1;
+	background: black;
 }
 
 #content h1 {
@@ -157,28 +226,82 @@ p {
 
 }
 
+/* this is for contact page*/
+
+#content .contacth1 {
+	font-size: 20pt;
+}
+
+#content .iconsh2 {
+	font-size: 70pt;
+	color: #DB2D1A;
+	margin-bottom: .2em;
+	margin-top: .2em;
+}
+
+#content .paragraphcontact {
+	padding: 0;
+	margin: 0;
+}
+
+/* this is for about page*/
+
+#content img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	width: 70%;
+	height: auto;
+}
 
 /* this is for project 1 page*/
 
 #p1main {
-	background: #212F3D;
-	margin: 2em;
+	background: black;
+	margin-left: 2em;
+	margin-bottom: 2em;
+	margin-right: 2em;
+	margin-top: 0;
 	padding: 2em;
 }
 
-.p1content {
-	background: #ECF0F1;
+.p1content img {
+	width: 100%;
+	height: auto;
 }
 
-.p1content {
+#p1main .p1header {
+	font-size: 24pt;
+	text-align: center;
+	justify-content: center;
 	
 }
 
-/* this is for project 2 page */
+/*this is for project 2 page*/
+
+.Exquisite {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,1fr);
+	grid-gap: 0px;
+}
+
+.Exquisite img {
+	width: 100%;
+}
+
+
+
+/*this is for project 3 page*/
+
+
+
+/* this is for project 4 page */
 
 #projects {
 	margin-bottom: 2em;
-	margin: 5em;
+	margin: 4em;
 }
 
 #projects .grid-item {
@@ -214,36 +337,6 @@ p {
 
 #projects .grid-item .overlay .project-title h3 {
 	margin-bottom: 0;
-
-}
-
-/*this is for exquisite corpse*/
-
-#exquisite {
-	position: relative;
-	margin-bottom: 2em;
-}
-
-#exquisite .grid {
-	grid-gap: 0;
-}
-
-#exquisite .grid img {
-	margin-bottom: 0;
-}
-
-
-
-@media (max-width: 699px) {
-
-	#wrapper {
-		margin: 0em auto;
-	}
-
-	#main {
-		margin: 1em;
-		padding: 0em;
-	}
 
 }
 
